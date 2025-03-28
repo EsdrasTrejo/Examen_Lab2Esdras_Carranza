@@ -124,7 +124,7 @@ public class Play_GUI {
         usuarioInfo.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
 
         JScrollPane scrollPane = new JScrollPane(usuarioInfo);
-        scrollPane.setBorder(BorderFactory.createTitledBorder("Información del usuario"));
+        scrollPane.setBorder(BorderFactory.createTitledBorder("datos del usuario"));
         gbc.gridy = 9;
         gbc.weightx = 1.0;
         gbc.weighty = 1.0;
