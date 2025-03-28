@@ -93,7 +93,7 @@ public class psnusers {
                 return;
             }
             
-            points += type.points;
+            points += type.puntos;
             trofeos++;
             raf.seek(posicion + username.length() + 2);
             raf.writeInt(points);

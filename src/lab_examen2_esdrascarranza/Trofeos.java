@@ -11,13 +11,13 @@ package lab_examen2_esdrascarranza;
 public enum Trofeos {
     Platino(5), Oro(3), Plata(2), Bronce(1);
 
-    public int points;
+    public int puntos;
     
-    Trofeos(int points) {
-        this.points = points;
+    Trofeos(int puntoss) {
+        this.puntos = puntos;
     }
     
-    public int getPoints() {
-        return points;
+    public int getPuntos() {
+        return puntos;
     }
 }

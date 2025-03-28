@@ -49,11 +49,11 @@ public class Play_GUI {
         gbc.insets = new Insets(10, 10, 10, 10);
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        Font fuente = new Font("Consolas", Font.BOLD, 18);
-        Font fuenteBtn = new Font("Consolas", Font.PLAIN, 16);
+        Font fuente = new Font("Consolas", Font.ITALIC, 18);
+        Font fuenteBtn = new Font("Consolas", Font.ITALIC, 16);
         Color colorBtn = new Color(120, 120, 120);
 
-        JLabel usuarioLabel = new JLabel("Usuario:");
+        JLabel usuarioLabel = new JLabel("Ingrese el nombre de Usuario:");
         usuarioLabel.setFont(fuente);
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -100,22 +100,22 @@ public class Play_GUI {
         gbc.gridy = 5;
         gbc.gridwidth = 2;
         JButton addBtn = new JButton("Agregar un usuario");
-        configurarBoton(addBtn, colorBtn, fuenteBtn, e -> agregarUsuario());
+        configurar_botones(addBtn, colorBtn, fuenteBtn, e -> agregarUsuario());
         panel.add(addBtn, gbc);
 
         gbc.gridy = 6;
         JButton deactivateBtn = new JButton("Desactivar el usuario");
-        configurarBoton(deactivateBtn, colorBtn, fuenteBtn, e -> desactivar_usuario());
+        configurar_botones(deactivateBtn, colorBtn, fuenteBtn, e -> desactivar_usuario());
         panel.add(deactivateBtn, gbc);
 
         gbc.gridy = 7;
         JButton searchBtn = new JButton("Buscar un usuario");
-        configurarBoton(searchBtn, colorBtn, fuenteBtn, e -> buscar_usuario());
+        configurar_botones(searchBtn, colorBtn, fuenteBtn, e -> buscar_usuario());
         panel.add(searchBtn, gbc);
 
         gbc.gridy = 8;
         JButton addTrofeoBtn = new JButton("Agregar el trofeo");
-        configurarBoton(addTrofeoBtn, colorBtn, fuenteBtn, e -> agregar_trofeo());
+        configurar_botones(addTrofeoBtn, colorBtn, fuenteBtn, e -> agregar_trofeo());
         panel.add(addTrofeoBtn, gbc);
 
         usuarioInfo = new JTextArea();
@@ -134,7 +134,7 @@ public class Play_GUI {
         frame.setVisible(true);
     }
 
-    private void configurarBoton(JButton boton, Color color, Font fuente, ActionListener action) {
+    private void configurar_botones(JButton boton, Color color, Font fuente, ActionListener action) {
         boton.setFont(fuente);
         boton.setBackground(color);
         boton.setForeground(Color.WHITE);
